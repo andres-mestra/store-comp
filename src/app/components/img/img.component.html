@@ -1,5 +1,7 @@
 <img
   style="width: 200px; object-fit: cover"
+  (load)="imgLoaded()"
+  (error)="imgError()"
   [src]="img"
   alt="imagen"
   *ngIf="img; else elseImg"
@@ -7,7 +9,7 @@
 <ng-template #elseImg>
   <img
     style="width: 200px; object-fit: cover"
-    src="./assets/images/default.png"
+    [src]="imgDefault"
     alt="imagen"
   />
 </ng-template>
