@@ -1,5 +1,8 @@
 <div class="card">
-  <app-img [img]="product.image" [alt]="product.name"></app-img>
+  <div
+    class="card_image"
+    style="background-image: url({{ product.image }})"
+  ></div>
   <div class="card_content">
     <h2 class="card_price">${{ product.price }}</h2>
     <p class="card_text">{{ product.name }}</p>

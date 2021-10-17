@@ -17,14 +17,26 @@ export class ProductsComponent implements OnInit {
     {
       id: 2,
       name: 'Super tennis',
-      image: './assets/images/tennis.jpg',
+      image: './assets/images/tennis_blue.jpg',
       price: 400,
     },
     {
       id: 3,
       name: 'Croydon tennis',
-      image: './assets/images/tennis.jpg',
+      image: './assets/images/tennis_black.jpg',
       price: 500,
+    },
+    {
+      id: 4,
+      name: 'Croydon tennis',
+      image: './assets/images/tennis_wow.jpg',
+      price: 450,
+    },
+    {
+      id: 5,
+      name: 'Croydon tennis',
+      image: './assets/images/tennis_green.jpg',
+      price: 890,
     },
   ];
 
