@@ -1,5 +1,5 @@
 <div class="card">
-  <img class="card_image" [src]="product.image" [alt]="product.name" />
+  <app-img [img]="product.image" [alt]="product.name"></app-img>
   <div class="card_content">
     <h2 class="card_price">${{ product.price }}</h2>
     <p class="card_text">{{ product.name }}</p>

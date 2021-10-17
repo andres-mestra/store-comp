@@ -1,16 +1,10 @@
 <img
-  style="width: 200px; object-fit: cover"
   (load)="imgLoaded()"
   (error)="imgError()"
   [src]="img"
-  alt="imagen"
+  [alt]="alt"
   *ngIf="img; else elseImg"
 />
-<h3>Counter: {{ counter }}</h3>
 <ng-template #elseImg>
-  <img
-    style="width: 200px; object-fit: cover"
-    [src]="imgDefault"
-    alt="imagen"
-  />
+  <img [src]="imgDefault" [alt]="alt" />
 </ng-template>
