@@ -1,0 +1,25 @@
+.card {
+  background: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 1px 10px rgba(#000000, 0.2);
+
+  &_image {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &_content {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  }
+
+  &_price {
+    font-size: 3rem;
+  }
+
+  &_text {
+    font-size: 2rem;
+  }
+}
