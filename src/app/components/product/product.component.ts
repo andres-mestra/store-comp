@@ -19,6 +19,9 @@ export class ProductComponent implements OnInit {
 
   constructor() {}
 
+  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
+  ngOnInit(): void {}
+
   onAddToCart() {
     this.addedProduct.emit(this.product);
   }
