@@ -1,5 +1,7 @@
 <h2>Cantidad: {{ myShoppingCart.length }}</h2>
 <h2>Total: ${{ total }}</h2>
+<p>Today: {{ today | date: "short" }}</p>
+<p>Otra fecha: {{ date | date }}</p>
 <div class="products_grid">
   <app-product
     [product]="product"
