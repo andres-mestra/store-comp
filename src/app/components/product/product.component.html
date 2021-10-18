@@ -1,11 +1,8 @@
 <div class="card">
-  <div
-    class="card_image"
-    style="background-image: url({{ product.image }})"
-  ></div>
+  <app-img [img]="product.image" [alt]="product.title"></app-img>
   <div class="card_content">
     <h2 class="card_price">${{ product.price }}</h2>
-    <p class="card_text">{{ product.name }}</p>
+    <p class="card_text">{{ product.title }}</p>
     <button (click)="onAddToCart()">Add cart</button>
   </div>
 </div>
