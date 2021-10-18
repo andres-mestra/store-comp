@@ -21,6 +21,7 @@ export class ImgComponent
   img: string = '';
 
   @Input() alt: string = 'image';
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('img')
   set changeImg(newImg: string) {
     this.img = newImg;
@@ -36,36 +37,6 @@ export class ImgComponent
     //before render
     //NO async -- once time
     //console.log('Constructor', 'imgValue', this.img);
-  }
-
-  ngOnChanges(change: SimpleChanges) {
-    //before render
-    // change inputs -- times
-    //console.log('OnChanges', 'imgValue', this.img);
-    //Cuando cualquier input cambia
-    //console.log('Change', change);
-  }
-
-  ngOnInit(): void {
-    //before render
-    // async- fetch, promises -- once time
-    /* console.log('OnInit', 'imgValue', this.img);
-    this.counterFn = window.setInterval(() => {
-      this.counter += 1;
-      console.log('Run counter');
-    }, 1000); */
-  }
-
-  ngAfterViewInit() {
-    //after render
-    //handler children
-    //console.log('AfterViewInit');
-  }
-
-  ngOnDestroy() {
-    //delete component
-    //console.log('OnDestroy');
-    //window.clearInterval(this.counterFn);
   }
 
   imgError() {
