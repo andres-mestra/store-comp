@@ -2,6 +2,7 @@
 <h2>Total: ${{ total }}</h2>
 <p>Today: {{ today | date: "short" }}</p>
 <p>Otra fecha: {{ date | date }}</p>
+<p>{{ texto | reverse }}</p>
 <div class="products_grid">
   <app-product
     [product]="product"

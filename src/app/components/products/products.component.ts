@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [];
   today = new Date();
   date = new Date(2021, 10, 17);
+  texto: string = 'Hola mundo';
 
   constructor(
     private storeService: StoreService,
